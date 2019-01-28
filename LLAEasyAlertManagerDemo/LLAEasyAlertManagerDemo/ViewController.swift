@@ -27,17 +27,17 @@ class ViewController: UIViewController,
 		textfieldCancel?.delegate = self
 	}
 
-	@IBAction func buttonAction1(_ sender: UIButton) {
+	@IBAction func buttonActionHandlerTitle(_ sender: UIButton) {
 		// message only.
 		LLAEasyAlertManager.sharedInstance.present(self, message: "1")
 	}
 
-	@IBAction func buttonAction2(_ sender: UIButton) {
+	@IBAction func buttonActionHandlerMessageTitle(_ sender: UIButton) {
 		// message, title.
 		LLAEasyAlertManager.sharedInstance.present(self, message: "2", title: "title")
 	}
 
-	@IBAction func buttonAction3(_ sender: UIButton) {
+	@IBAction func buttonActionHandlerDefault(_ sender: UIButton) {
 		// message, title, handler(default)
 		LLAEasyAlertManager.sharedInstance.present(self, message: "3", title: "title",
 												   handlerDefault: { (action: UIAlertAction!) in
@@ -45,7 +45,7 @@ class ViewController: UIViewController,
 		})
 	}
 
-	@IBAction func buttonAction4(_ sender: UIButton) {
+	@IBAction func buttonActionHandlerCancel(_ sender: UIButton) {
 		// message, title, handler(cancel)
 		LLAEasyAlertManager.sharedInstance.present(self, message: "4", title: "title",
 												   handlerDefault: nil,
@@ -54,7 +54,7 @@ class ViewController: UIViewController,
 		)
 	}
 
-	@IBAction func buttonAction5(_ sender: UIButton) {
+	@IBAction func buttonActionHandlerBoth(_ sender: UIButton) {
 		// message, title, handler(default), handler(cancel)
 		LLAEasyAlertManager.sharedInstance.present(self, message: "5", title: "title",
 												   handlerDefault: { (action: UIAlertAction!) in
