@@ -27,12 +27,12 @@ class ViewController: UIViewController,
 		textfieldCancel?.delegate = self
 	}
 
-	@IBAction func buttonActionHandlerTitle(_ sender: UIButton) {
+	@IBAction func buttonActionTitle(_ sender: UIButton) {
 		// message only.
 		LLAEasyAlertManager.sharedInstance.present(self, message: "1")
 	}
 
-	@IBAction func buttonActionHandlerMessageTitle(_ sender: UIButton) {
+	@IBAction func buttonActionMessageTitle(_ sender: UIButton) {
 		// message, title.
 		LLAEasyAlertManager.sharedInstance.present(self, message: "2", title: "title")
 	}

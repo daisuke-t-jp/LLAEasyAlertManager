@@ -52,7 +52,7 @@
                                         </constraints>
                                         <state key="normal" title="1"/>
                                         <connections>
-                                            <action selector="buttonActionHandlerTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdg-4A-YZm"/>
+                                            <action selector="buttonActionTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdg-4A-YZm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni8-f2-JZc">
@@ -64,7 +64,7 @@
                                         </constraints>
                                         <state key="normal" title="2"/>
                                         <connections>
-                                            <action selector="buttonActionHandlerMessageTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxn-2g-BSZ"/>
+                                            <action selector="buttonActionMessageTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxn-2g-BSZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-XP-OA3">
