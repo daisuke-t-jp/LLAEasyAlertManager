@@ -52,7 +52,7 @@
                                         </constraints>
                                         <state key="normal" title="1"/>
                                         <connections>
-                                            <action selector="buttonActionTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdg-4A-YZm"/>
+                                            <action selector="buttonActionMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdg-4A-YZm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ni8-f2-JZc">
