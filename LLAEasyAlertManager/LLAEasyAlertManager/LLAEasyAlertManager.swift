@@ -18,8 +18,8 @@ public class LLAEasyAlertManager
 	
 	
 	// MARK: - Property
-	private static let actionTitleDefaultPreset = "OK"
-	private static let actionTitleCancelPreset = "Cancel"
+	static let actionTitleDefaultPreset = "OK"
+	static let actionTitleCancelPreset = "Cancel"
 	public var actionTitleMap = [UIAlertAction.Style.default: actionTitleDefaultPreset,
 								 UIAlertAction.Style.cancel: actionTitleCancelPreset]
 	
