@@ -29,17 +29,17 @@ class ViewController: UIViewController,
 
 	@IBAction func buttonActionMessage(_ sender: UIButton) {
 		// message only.
-		LLAEasyAlertManager.sharedInstance.present(self, message: "1")
+		LLAEasyAlertManager.sharedInstance.present(self, message: "Message")
 	}
 
 	@IBAction func buttonActionMessageTitle(_ sender: UIButton) {
 		// message, title.
-		LLAEasyAlertManager.sharedInstance.present(self, message: "2", title: "title")
+		LLAEasyAlertManager.sharedInstance.present(self, message: "MessageTitle", title: "title")
 	}
 
 	@IBAction func buttonActionHandlerDefault(_ sender: UIButton) {
 		// message, title, handler(default)
-		LLAEasyAlertManager.sharedInstance.present(self, message: "3", title: "title",
+		LLAEasyAlertManager.sharedInstance.present(self, message: "HandlerDefault", title: "title",
 												   handlerDefault: { (action: UIAlertAction!) in
 													print("default")
 		})
@@ -47,7 +47,7 @@ class ViewController: UIViewController,
 
 	@IBAction func buttonActionHandlerCancel(_ sender: UIButton) {
 		// message, title, handler(cancel)
-		LLAEasyAlertManager.sharedInstance.present(self, message: "4", title: "title",
+		LLAEasyAlertManager.sharedInstance.present(self, message: "HandlerCancel", title: "title",
 												   handlerDefault: nil,
 												   handlerCancel: { (action: UIAlertAction!) in
 													print("cancel")}
@@ -56,7 +56,7 @@ class ViewController: UIViewController,
 
 	@IBAction func buttonActionHandlerBoth(_ sender: UIButton) {
 		// message, title, handler(default), handler(cancel)
-		LLAEasyAlertManager.sharedInstance.present(self, message: "5", title: "title",
+		LLAEasyAlertManager.sharedInstance.present(self, message: "HandlerBoth", title: "title",
 												   handlerDefault: { (action: UIAlertAction!) in
 													print("default")},
 												   handlerCancel: { (action: UIAlertAction!) in

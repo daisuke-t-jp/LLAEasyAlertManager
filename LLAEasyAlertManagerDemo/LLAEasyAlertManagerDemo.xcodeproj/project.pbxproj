@@ -14,6 +14,7 @@
 		02E8EDF921FEE08F002F4446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E8EDF721FEE08F002F4446 /* LaunchScreen.storyboard */; };
 		02E8EE0F21FEE08F002F4446 /* LLAEasyAlertManagerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8EE0E21FEE08F002F4446 /* LLAEasyAlertManagerDemoUITests.swift */; };
 		08076866060DF122EFF11FA0 /* Pods_LLAEasyAlertManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1FD35E821975EDD6E19122 /* Pods_LLAEasyAlertManagerDemo.framework */; };
+		0DEFCC2E9DD9E6A6A6E92CCA /* Pods_LLAEasyAlertManagerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FBFA32EA99055BAE796C1D /* Pods_LLAEasyAlertManagerDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,11 @@
 		02E8EE0A21FEE08F002F4446 /* LLAEasyAlertManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLAEasyAlertManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E8EE0E21FEE08F002F4446 /* LLAEasyAlertManagerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAEasyAlertManagerDemoUITests.swift; sourceTree = "<group>"; };
 		02E8EE1021FEE08F002F4446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FBFA32EA99055BAE796C1D /* Pods_LLAEasyAlertManagerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLAEasyAlertManagerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FF40CA7110A89CEF865A04 /* Pods-LLAEasyAlertManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAEasyAlertManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B253062DA2DA8A29FD2E0BA4 /* Pods-LLAEasyAlertManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAEasyAlertManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DA1A62C4E5A5681006DA01DE /* Pods-LLAEasyAlertManagerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAEasyAlertManagerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFECBF5C4E9E74030A839A1A /* Pods-LLAEasyAlertManagerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAEasyAlertManagerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB1FD35E821975EDD6E19122 /* Pods_LLAEasyAlertManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLAEasyAlertManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEFCC2E9DD9E6A6A6E92CCA /* Pods_LLAEasyAlertManagerDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FB1FD35E821975EDD6E19122 /* Pods_LLAEasyAlertManagerDemo.framework */,
+				26FBFA32EA99055BAE796C1D /* Pods_LLAEasyAlertManagerDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +122,8 @@
 			children = (
 				75FF40CA7110A89CEF865A04 /* Pods-LLAEasyAlertManagerDemo.debug.xcconfig */,
 				B253062DA2DA8A29FD2E0BA4 /* Pods-LLAEasyAlertManagerDemo.release.xcconfig */,
+				DA1A62C4E5A5681006DA01DE /* Pods-LLAEasyAlertManagerDemoUITests.debug.xcconfig */,
+				EFECBF5C4E9E74030A839A1A /* Pods-LLAEasyAlertManagerDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -146,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02E8EE1921FEE08F002F4446 /* Build configuration list for PBXNativeTarget "LLAEasyAlertManagerDemoUITests" */;
 			buildPhases = (
+				464D74912164510DAF60D591 /* [CP] Check Pods Manifest.lock */,
 				02E8EE0621FEE08F002F4446 /* Sources */,
 				02E8EE0721FEE08F002F4446 /* Frameworks */,
 				02E8EE0821FEE08F002F4446 /* Resources */,
+				AF5BBEE894FBE2C86EC5B3D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +247,28 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		464D74912164510DAF60D591 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LLAEasyAlertManagerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7401488FF7D9FB1CDFF9C82C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +285,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF5BBEE894FBE2C86EC5B3D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LLAEasyAlertManager/LLAEasyAlertManager.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLAEasyAlertManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -459,6 +513,7 @@
 		};
 		02E8EE1A21FEE08F002F4446 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1A62C4E5A5681006DA01DE /* Pods-LLAEasyAlertManagerDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +533,7 @@
 		};
 		02E8EE1B21FEE08F002F4446 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFECBF5C4E9E74030A839A1A /* Pods-LLAEasyAlertManagerDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

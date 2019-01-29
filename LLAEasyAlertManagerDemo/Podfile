@@ -6,4 +6,8 @@ pod 'LLAEasyAlertManager', :path => "../"
 #pod 'LLAEasyAlertManager'
 end
 
+target 'LLAEasyAlertManagerDemoUITests' do
+pod 'LLAEasyAlertManager', :path => "../"
+#pod 'LLAEasyAlertManager'
+end
 
