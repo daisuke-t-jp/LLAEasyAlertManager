@@ -32,16 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "02E8EDFE21FEE08F002F4446"
-               BuildableName = "LLAEasyAlertManagerDemoTests.xctest"
-               BlueprintName = "LLAEasyAlertManagerDemoTests"
-               ReferencedContainer = "container:LLAEasyAlertManagerDemo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "02E8EE0921FEE08F002F4446"
                BuildableName = "LLAEasyAlertManagerDemoUITests.xctest"
                BlueprintName = "LLAEasyAlertManagerDemoUITests"
