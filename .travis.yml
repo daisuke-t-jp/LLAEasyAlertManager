@@ -8,8 +8,11 @@ env:
     - IOS_DESTINATION='platform=iOS Simulator,name=iPhone X'
 
 before_install:
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
 
 script:
+  - pod install --project-directory=LLAEasyAlertManagerDemo
+
   - swift --version
   - xcodebuild test -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -sdk iphonesimulator -destination "$IOS_DESTINATION" -configuration Debug
 
