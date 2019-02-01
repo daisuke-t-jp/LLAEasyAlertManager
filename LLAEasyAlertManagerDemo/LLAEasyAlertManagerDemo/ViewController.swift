@@ -25,21 +25,29 @@ class ViewController: UIViewController,
 		
 		textfieldDefault?.delegate = self
 		textfieldCancel?.delegate = self
+		textfieldDefault?.text = LLAEasyAlertManager.sharedInstance.actionTitleMap[.default]
+		textfieldCancel?.text = LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel]
 	}
 
 	@IBAction func buttonActionMessage(_ sender: UIButton) {
 		// message only.
-		LLAEasyAlertManager.sharedInstance.present(self, message: "Message")
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.default] = textfieldDefault?.text
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel] = textfieldCancel?.text
+		LLAEasyAlertManager.sharedInstance.present(self, message: "[Message]Message")
 	}
 
 	@IBAction func buttonActionMessageTitle(_ sender: UIButton) {
 		// message, title.
-		LLAEasyAlertManager.sharedInstance.present(self, message: "MessageTitle", title: "title")
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.default] = textfieldDefault?.text
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel] = textfieldCancel?.text
+		LLAEasyAlertManager.sharedInstance.present(self, message: "[Message]MessageTitle", title: "[Title]MessageTitle")
 	}
 
 	@IBAction func buttonActionHandlerDefault(_ sender: UIButton) {
 		// message, title, handler(default)
-		LLAEasyAlertManager.sharedInstance.present(self, message: "HandlerDefault", title: "title",
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.default] = textfieldDefault?.text
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel] = textfieldCancel?.text
+		LLAEasyAlertManager.sharedInstance.present(self, message: "[Message]HandlerDefault", title: "[Title]HandlerDefault",
 												   handlerDefault: { (action: UIAlertAction!) in
 													print("default")
 		})
@@ -47,7 +55,9 @@ class ViewController: UIViewController,
 
 	@IBAction func buttonActionHandlerCancel(_ sender: UIButton) {
 		// message, title, handler(cancel)
-		LLAEasyAlertManager.sharedInstance.present(self, message: "HandlerCancel", title: "title",
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.default] = textfieldDefault?.text
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel] = textfieldCancel?.text
+		LLAEasyAlertManager.sharedInstance.present(self, message: "[Message]HandlerCancel", title: "[Title]HandlerCancel",
 												   handlerDefault: nil,
 												   handlerCancel: { (action: UIAlertAction!) in
 													print("cancel")}
@@ -56,7 +66,9 @@ class ViewController: UIViewController,
 
 	@IBAction func buttonActionHandlerBoth(_ sender: UIButton) {
 		// message, title, handler(default), handler(cancel)
-		LLAEasyAlertManager.sharedInstance.present(self, message: "HandlerBoth", title: "title",
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.default] = textfieldDefault?.text
+		LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel] = textfieldCancel?.text
+		LLAEasyAlertManager.sharedInstance.present(self, message: "[Message]HandlerBoth", title: "[Title]HandlerBoth",
 												   handlerDefault: { (action: UIAlertAction!) in
 													print("default")},
 												   handlerCancel: { (action: UIAlertAction!) in
@@ -64,25 +76,10 @@ class ViewController: UIViewController,
 		)
 	}
 
-	
 	// MARK: - TextField
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-		guard let text = textField.text else {
-			return false
-		}
-		guard text.count > 0 else {
-			return false
-		}
-
-		if textField == textfieldDefault {
-			LLAEasyAlertManager.sharedInstance.actionTitleMap[.default] = text
-		}
-		else {
-			LLAEasyAlertManager.sharedInstance.actionTitleMap[.cancel] = text
-		}
-
 		textField.resignFirstResponder()
-
+		
 		return true
 	}
 

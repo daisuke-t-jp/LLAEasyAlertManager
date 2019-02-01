@@ -26,6 +26,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Default" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-89-AzU">
                                 <rect key="frame" x="102.5" y="95" width="170" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="IDTextFieldDefault"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="lOq-aD-NQ7"/>
                                     <constraint firstAttribute="height" constant="30" id="xig-rX-Xde"/>
@@ -36,6 +37,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cancel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9tX-i2-CVS">
                                 <rect key="frame" x="102.5" y="133" width="170" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="IDTextFieldCancel"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="WZo-lr-kRJ"/>
                                     <constraint firstAttribute="height" constant="30" id="nNV-M5-Fa8"/>
