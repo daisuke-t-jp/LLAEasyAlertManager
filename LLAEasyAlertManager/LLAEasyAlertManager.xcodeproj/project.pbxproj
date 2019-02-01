@@ -7,29 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0218173F21FE903E0023CDF8 /* LLAEasyAlertManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0218173521FE903E0023CDF8 /* LLAEasyAlertManager.framework */; };
-		0218174421FE903E0023CDF8 /* LLAEasyAlertManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218174321FE903E0023CDF8 /* LLAEasyAlertManagerTests.swift */; };
 		0218174621FE903E0023CDF8 /* LLAEasyAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0218173821FE903E0023CDF8 /* LLAEasyAlertManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0218175021FE90510023CDF8 /* LLAEasyAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0218174F21FE90510023CDF8 /* LLAEasyAlertManager.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0218174021FE903E0023CDF8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0218172C21FE903E0023CDF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0218173421FE903E0023CDF8;
-			remoteInfo = LLAEasyAlert;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0218173521FE903E0023CDF8 /* LLAEasyAlertManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LLAEasyAlertManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0218173821FE903E0023CDF8 /* LLAEasyAlertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAEasyAlertManager.h; sourceTree = "<group>"; };
 		0218173921FE903E0023CDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0218173E21FE903E0023CDF8 /* LLAEasyAlertManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLAEasyAlertManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0218174321FE903E0023CDF8 /* LLAEasyAlertManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAEasyAlertManagerTests.swift; sourceTree = "<group>"; };
-		0218174521FE903E0023CDF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0218174F21FE90510023CDF8 /* LLAEasyAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLAEasyAlertManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0218173B21FE903E0023CDF8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0218173F21FE903E0023CDF8 /* LLAEasyAlertManager.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				0218173721FE903E0023CDF8 /* LLAEasyAlertManager */,
-				0218174221FE903E0023CDF8 /* LLAEasyAlertManagerTests */,
 				0218173621FE903E0023CDF8 /* Products */,
 				0218179721FED76A0023CDF8 /* Frameworks */,
 			);
@@ -66,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				0218173521FE903E0023CDF8 /* LLAEasyAlertManager.framework */,
-				0218173E21FE903E0023CDF8 /* LLAEasyAlertManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,15 +54,6 @@
 				0218173921FE903E0023CDF8 /* Info.plist */,
 			);
 			path = LLAEasyAlertManager;
-			sourceTree = "<group>";
-		};
-		0218174221FE903E0023CDF8 /* LLAEasyAlertManagerTests */ = {
-			isa = PBXGroup;
-			children = (
-				0218174321FE903E0023CDF8 /* LLAEasyAlertManagerTests.swift */,
-				0218174521FE903E0023CDF8 /* Info.plist */,
-			);
-			path = LLAEasyAlertManagerTests;
 			sourceTree = "<group>";
 		};
 		0218179721FED76A0023CDF8 /* Frameworks */ = {
@@ -129,24 +95,6 @@
 			productReference = 0218173521FE903E0023CDF8 /* LLAEasyAlertManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0218173D21FE903E0023CDF8 /* LLAEasyAlertManagerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0218174C21FE903E0023CDF8 /* Build configuration list for PBXNativeTarget "LLAEasyAlertManagerTests" */;
-			buildPhases = (
-				0218173A21FE903E0023CDF8 /* Sources */,
-				0218173B21FE903E0023CDF8 /* Frameworks */,
-				0218173C21FE903E0023CDF8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0218174121FE903E0023CDF8 /* PBXTargetDependency */,
-			);
-			name = LLAEasyAlertManagerTests;
-			productName = LLAEasyAlertTests;
-			productReference = 0218173E21FE903E0023CDF8 /* LLAEasyAlertManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,9 +108,6 @@
 					0218173421FE903E0023CDF8 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
-					};
-					0218173D21FE903E0023CDF8 = {
-						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -180,20 +125,12 @@
 			projectRoot = "";
 			targets = (
 				0218173421FE903E0023CDF8 /* LLAEasyAlertManager */,
-				0218173D21FE903E0023CDF8 /* LLAEasyAlertManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0218173321FE903E0023CDF8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0218173C21FE903E0023CDF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,23 +148,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0218173A21FE903E0023CDF8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0218174421FE903E0023CDF8 /* LLAEasyAlertManagerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0218174121FE903E0023CDF8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0218173421FE903E0023CDF8 /* LLAEasyAlertManager */;
-			targetProxy = 0218174021FE903E0023CDF8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0218174721FE903E0023CDF8 /* Debug */ = {
@@ -403,42 +324,6 @@
 			};
 			name = Release;
 		};
-		0218174D21FE903E0023CDF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/LLAEasyAlertManagerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LLAEasyAlertManager.LLAEasyAlertManagerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0218174E21FE903E0023CDF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(PROJECT_DIR)/LLAEasyAlertManagerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.LLAEasyAlertManager.LLAEasyAlertManagerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,15 +341,6 @@
 			buildConfigurations = (
 				0218174A21FE903E0023CDF8 /* Debug */,
 				0218174B21FE903E0023CDF8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0218174C21FE903E0023CDF8 /* Build configuration list for PBXNativeTarget "LLAEasyAlertManagerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0218174D21FE903E0023CDF8 /* Debug */,
-				0218174E21FE903E0023CDF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
