@@ -10,8 +10,8 @@ import Foundation
 
 
 
-public class LLAEasyAlertManager
-{
+public class LLAEasyAlertManager {
+
 	// MARK: Singleton
 	public static let sharedInstance = LLAEasyAlertManager()
 

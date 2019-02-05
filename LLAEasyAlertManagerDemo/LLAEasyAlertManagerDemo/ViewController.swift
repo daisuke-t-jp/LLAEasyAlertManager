@@ -13,8 +13,8 @@ import LLAEasyAlertManager
 
 
 class ViewController: UIViewController,
-	UITextFieldDelegate
-{
+	UITextFieldDelegate {
+
 	@IBOutlet weak var textfieldDefault: UITextField?
 	@IBOutlet weak var textfieldCancel: UITextField?
 
