@@ -1,16 +1,40 @@
-Pod::Spec.new do |s|
-s.name         = "LLAEasyAlertManager"
-s.version      = "1.0.2"
-s.summary      = "LLAEasyAlertManager is class for easy use of UIAlertController."
-s.homepage     = "https://github.com/daisuke-t-jp/LLAEasyAlertManager"
-s.screenshots  = "https://raw.githubusercontent.com/daisuke-t-jp/LLAEasyAlertManager/master/doc/header.png"
-s.license      = "MIT"
-s.author       = { "daisuke-t-jp" => "daisuke.t.jp@gmail.com" }
+Pod::Spec.new do |spec|
 
-s.requires_arc = true
-s.swift_version  = "4.2"
-s.ios.deployment_target = "10.0"
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.name         = "LLAEasyAlertManager"
+  spec.version      = "1.0.2"
+  spec.summary      = "LLAEasyAlertManager is class for easy use of UIAlertController."
 
-s.source       = { :git => "https://github.com/daisuke-t-jp/LLAEasyAlertManager.git", :tag => s.version }
-s.source_files  = 'LLAEasyAlertManager/LLAEasyAlertManager/*.{h,swift}'
+  spec.description  = <<-DESC
+                   "LLAEasyAlertManager" is class for easy use of UIAlertController.
+                   DESC
+
+  spec.homepage     = "https://github.com/daisuke-t-jp/LLAEasyAlertManager"
+  spec.screenshots  = "https://raw.githubusercontent.com/daisuke-t-jp/LLAEasyAlertManager/master/doc/header.png"
+
+
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+
+
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.author       = { "daisuke-t-jp" => "daisuke.t.jp@gmail.com" }
+
+
+  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.ios.deployment_target = "10.0"
+
+
+  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.source       = { :git => "https://github.com/daisuke-t-jp/LLAEasyAlertManager.git", :tag => "#{spec.version}" }
+
+
+  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.source_files  = "LLAEasyAlertManager/LLAEasyAlertManager/*.{h,swift}"
+
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  spec.swift_version = "4.2"
+  spec.requires_arc = true
+
 end
