@@ -6,9 +6,10 @@
 [![Cocoapods](https://img.shields.io/cocoapods/v/LLAEasyAlertManager.svg)](https://cocoapods.org/pods/LLAEasyAlertManager)
 [![Build Status](https://travis-ci.org/daisuke-t-jp/LLAEasyAlertManager.svg?branch=master)](https://travis-ci.org/daisuke-t-jp/LLAEasyAlertManager)
 
-# Concept
 
-LLAEasyAlertManager is class for easy use of UIAlertController.
+# What is this?
+
+**LLAEasyAlertManager** is class for easy use of UIAlertController.
 
 
 
@@ -18,7 +19,6 @@ LLAEasyAlertManager is class for easy use of UIAlertController.
 
 ### CocoaPods
 ```
-platform :ios, '10.0'
 use_frameworks!
 
 target 'target' do
@@ -33,12 +33,14 @@ import LLAEasyAlertManager
 
 
 /**
+ * Present alert with
  * - Message
  * - OK button
  */
 LLAEasyAlertManager.sharedInstance.present(self, message: "Message")
 
 /**
+ * Present alert with
  * - Message
  * - Title
  * - OK button
@@ -46,6 +48,7 @@ LLAEasyAlertManager.sharedInstance.present(self, message: "Message")
 LLAEasyAlertManager.sharedInstance.present(self, message: "MessageTitle", title: "title")
 
 /**
+ * Present alert with
  * - Message
  * - Title
  * - OK button
@@ -58,6 +61,7 @@ LLAEasyAlertManager.sharedInstance.present(self,
 		print("default") })
 
 /**
+ * Present alert with
  * - Message
  * - Title
  * - OK button
@@ -72,6 +76,7 @@ LLAEasyAlertManager.sharedInstance.present(self,
 		print("cancel") })
 
 /**
+ * Present alert with
  * - Message
  * - Title
  * - OK button
