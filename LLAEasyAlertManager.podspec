@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source_files  = "LLAEasyAlertManager/LLAEasyAlertManager/*.{h,swift}"
+  spec.source_files  = "LLAEasyAlertManager/LLAEasyAlertManager/*.{swift}"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
