@@ -1,5 +1,5 @@
 PODS:
-  - LLAEasyAlertManager (1.0.2)
+  - LLAEasyAlertManager (1.0.3)
 
 DEPENDENCIES:
   - LLAEasyAlertManager (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LLAEasyAlertManager: dcc78ef993410f3c22c4e4c797e32c6f57422cf9
+  LLAEasyAlertManager: d0c7876e02f08532ce6eef08f5f567198ab33d31
 
 PODFILE CHECKSUM: 32290edfa69c020a590fe080fbf8f8077f03a60e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0

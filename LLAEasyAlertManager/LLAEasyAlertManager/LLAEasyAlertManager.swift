@@ -8,23 +8,17 @@
 
 import Foundation
 
-
-
 public class LLAEasyAlertManager {
 
 	// MARK: Singleton
 	public static let sharedInstance = LLAEasyAlertManager()
 
-	
-	
 	// MARK: - Property
 	static let actionTitleDefaultPreset = "OK"
 	static let actionTitleCancelPreset = "Cancel"
 	public var actionTitleMap = [UIAlertAction.Style.default: actionTitleDefaultPreset,
 								 UIAlertAction.Style.cancel: actionTitleCancelPreset]
-	
-	
-	
+
 	// MARK: - Present
 	public func present(_ viewController: UIViewController,
 						message: String,
@@ -37,7 +31,6 @@ public class LLAEasyAlertManager {
 									  message: message,
 									  preferredStyle: .alert)
 
-		
 		// Create action.
 		let action = UIAlertAction(title: actionTitleMap[.default],
 								   style: .default,
@@ -51,9 +44,8 @@ public class LLAEasyAlertManager {
 			alert.addAction(action)
 		}
 
-
 		// Present.
 		viewController.present(alert, animated: true, completion: nil)
 	}
-	
+
 }

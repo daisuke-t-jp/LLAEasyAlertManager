@@ -235,7 +235,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LLAEasyAlertManager/LLAEasyAlertManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -244,7 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLAEasyAlertManagerDemo/Pods-LLAEasyAlertManagerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		464D74912164510DAF60D591 /* [CP] Check Pods Manifest.lock */ = {
@@ -295,7 +295,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LLAEasyAlertManager/LLAEasyAlertManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -306,7 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LLAEasyAlertManagerDemoUITests/Pods-LLAEasyAlertManagerDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
