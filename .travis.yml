@@ -1,15 +1,10 @@
 language: swift
 osx_image: xcode10.2
-
-env:
-  global:
-    - WORKSPACE='LLAEasyAlertManagerDemo/LLAEasyAlertManagerDemo.xcworkspace'
-    - IOS_SCHEME='LLAEasyAlertManagerDemo'
-    - IOS_DESTINATION='platform=iOS Simulator,name=iPhone X'
+podfile: LLAEasyAlertManagerDemo
 
 script:
   - swift --version
-  - xcodebuild test -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -sdk iphonesimulator -destination "$IOS_DESTINATION" -configuration Debug
+  - xcodebuild test -workspace "LLAEasyAlertManagerDemo/LLAEasyAlertManagerDemo.xcworkspace" -scheme "LLAEasyAlertManagerDemo" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X" -configuration Debug
 
 branches:
   only: 
