@@ -30,167 +30,167 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-	func testMessage() {
-		let app = XCUIApplication()
-		
-		let button = app.buttons["Message"]
-		XCTAssertTrue(button.exists)
-		button.tap()
-		
-		let alert = app.alerts.element
-		XCTAssertTrue(alert.staticTexts["[Message]Message"].exists)
-		XCTAssertEqual(alert.label, "")
+  func testMessage() {
+    let app = XCUIApplication()
+    
+    let button = app.buttons["Message"]
+    XCTAssertTrue(button.exists)
+    button.tap()
+    
+    let alert = app.alerts.element
+    XCTAssertTrue(alert.staticTexts["[Message]Message"].exists)
+    XCTAssertEqual(alert.label, "")
 
-		let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
-		XCTAssertTrue(alertButtonDefault.exists)
-		alertButtonDefault.tap()
-	}
+    let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
+    XCTAssertTrue(alertButtonDefault.exists)
+    alertButtonDefault.tap()
+  }
 
-	func testMessageTitle() {
-		let app = XCUIApplication()
+  func testMessageTitle() {
+    let app = XCUIApplication()
 
-		let button = app.buttons["MessageTitle"]
-		XCTAssertTrue(button.exists)
-		button.tap()
+    let button = app.buttons["MessageTitle"]
+    XCTAssertTrue(button.exists)
+    button.tap()
 
-		let alert = app.alerts.element
-		XCTAssertTrue(alert.staticTexts["[Message]MessageTitle"].exists)
-		XCTAssertEqual(alert.label, "[Title]MessageTitle")
+    let alert = app.alerts.element
+    XCTAssertTrue(alert.staticTexts["[Message]MessageTitle"].exists)
+    XCTAssertEqual(alert.label, "[Title]MessageTitle")
 
-		let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
-		XCTAssertTrue(alertButtonDefault.exists)
-		alertButtonDefault.tap()
-	}
-	
-	func testHandlerDefault() {
-		let app = XCUIApplication()
-		
-		let button = app.buttons["HandlerDefault"]
-		XCTAssertTrue(button.exists)
-		button.tap()
+    let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
+    XCTAssertTrue(alertButtonDefault.exists)
+    alertButtonDefault.tap()
+  }
+  
+  func testHandlerDefault() {
+    let app = XCUIApplication()
+    
+    let button = app.buttons["HandlerDefault"]
+    XCTAssertTrue(button.exists)
+    button.tap()
 
-		let alert = app.alerts.element
-		XCTAssertTrue(alert.staticTexts["[Message]HandlerDefault"].exists)
-		XCTAssertEqual(alert.label, "[Title]HandlerDefault")
+    let alert = app.alerts.element
+    XCTAssertTrue(alert.staticTexts["[Message]HandlerDefault"].exists)
+    XCTAssertEqual(alert.label, "[Title]HandlerDefault")
 
-		let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
-		XCTAssertTrue(alertButtonDefault.exists)
-		alertButtonDefault.tap()
-	}
-	
-	func testHandlerCancel() {
-		let app = XCUIApplication()
-		
-		let button = app.buttons["HandlerCancel"]
-		XCTAssertTrue(button.exists)
+    let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
+    XCTAssertTrue(alertButtonDefault.exists)
+    alertButtonDefault.tap()
+  }
+  
+  func testHandlerCancel() {
+    let app = XCUIApplication()
+    
+    let button = app.buttons["HandlerCancel"]
+    XCTAssertTrue(button.exists)
 
-		
-		_ = { () -> () in
-			button.tap()
+    
+    _ = { () -> () in
+      button.tap()
 
-			let alert = app.alerts.element
-			XCTAssertTrue(alert.staticTexts["[Message]HandlerCancel"].exists)
-			XCTAssertEqual(alert.label, "[Title]HandlerCancel")
-			
-			let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
-			XCTAssertTrue(alertButtonDefault.exists)
-			alertButtonDefault.tap()
-		}()
+      let alert = app.alerts.element
+      XCTAssertTrue(alert.staticTexts["[Message]HandlerCancel"].exists)
+      XCTAssertEqual(alert.label, "[Title]HandlerCancel")
+      
+      let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
+      XCTAssertTrue(alertButtonDefault.exists)
+      alertButtonDefault.tap()
+    }()
 
-		
-		_ = { () -> () in
-			button.tap()
+    
+    _ = { () -> () in
+      button.tap()
 
-			let alert = app.alerts.element
-			XCTAssertTrue(alert.staticTexts["[Message]HandlerCancel"].exists)
-			XCTAssertEqual(alert.label, "[Title]HandlerCancel")
-			
-			let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset]
-			XCTAssertTrue(alertButtonCancel.exists)
-			alertButtonCancel.tap()
-		}()
+      let alert = app.alerts.element
+      XCTAssertTrue(alert.staticTexts["[Message]HandlerCancel"].exists)
+      XCTAssertEqual(alert.label, "[Title]HandlerCancel")
+      
+      let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset]
+      XCTAssertTrue(alertButtonCancel.exists)
+      alertButtonCancel.tap()
+    }()
 
-	}
-	
-	func testHandlerBoth() {
-		let app = XCUIApplication()
-		
-		let button = app.buttons["HandlerBoth"]
-		XCTAssertTrue(button.exists)
-		
-		
-		_ = { () -> () in
-			button.tap()
-			
-			let alert = app.alerts.element
-			XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
-			XCTAssertEqual(alert.label, "[Title]HandlerBoth")
-			
-			let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
-			XCTAssertTrue(alertButtonDefault.exists)
-			alertButtonDefault.tap()
-		}()
-		
-		
-		_ = { () -> () in
-			button.tap()
-			
-			let alert = app.alerts.element
-			XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
-			XCTAssertEqual(alert.label, "[Title]HandlerBoth")
-			
-			let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset]
-			XCTAssertTrue(alertButtonCancel.exists)
-			alertButtonCancel.tap()
-		}()
-		
-	}
+  }
+  
+  func testHandlerBoth() {
+    let app = XCUIApplication()
+    
+    let button = app.buttons["HandlerBoth"]
+    XCTAssertTrue(button.exists)
+    
+    
+    _ = { () -> () in
+      button.tap()
+      
+      let alert = app.alerts.element
+      XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
+      XCTAssertEqual(alert.label, "[Title]HandlerBoth")
+      
+      let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
+      XCTAssertTrue(alertButtonDefault.exists)
+      alertButtonDefault.tap()
+    }()
+    
+    
+    _ = { () -> () in
+      button.tap()
+      
+      let alert = app.alerts.element
+      XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
+      XCTAssertEqual(alert.label, "[Title]HandlerBoth")
+      
+      let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset]
+      XCTAssertTrue(alertButtonCancel.exists)
+      alertButtonCancel.tap()
+    }()
+    
+  }
 
 
-	func testActionTitleMap() {
-		let app = XCUIApplication()
+  func testActionTitleMap() {
+    let app = XCUIApplication()
 
-		let button = app.buttons["HandlerBoth"]
-		XCTAssertTrue(button.exists)
-		
-		let titleDefaultAppend = "2"
-		let titleCancelAppend = "2"
-		let textfieldDefault = app.textFields["IDTextFieldDefault"]
-		let textfieldCancel = app.textFields["IDTextFieldCancel"]
+    let button = app.buttons["HandlerBoth"]
+    XCTAssertTrue(button.exists)
+    
+    let titleDefaultAppend = "2"
+    let titleCancelAppend = "2"
+    let textfieldDefault = app.textFields["IDTextFieldDefault"]
+    let textfieldCancel = app.textFields["IDTextFieldCancel"]
 
-		textfieldDefault.tap()
-		textfieldDefault.typeText(titleDefaultAppend)
-		textfieldDefault.typeText("\n")
+    textfieldDefault.tap()
+    textfieldDefault.typeText(titleDefaultAppend)
+    textfieldDefault.typeText("\n")
 
-		textfieldCancel.tap()
-		textfieldCancel.typeText(titleCancelAppend)
-		textfieldCancel.typeText("\n")
+    textfieldCancel.tap()
+    textfieldCancel.typeText(titleCancelAppend)
+    textfieldCancel.typeText("\n")
 
-		
-		_ = { () -> () in
-			button.tap()
-			
-			let alert = app.alerts.element
-			XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
-			XCTAssertEqual(alert.label, "[Title]HandlerBoth")
-			
-			let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset + titleDefaultAppend]
-			XCTAssertTrue(alertButtonDefault.exists)
-			alertButtonDefault.tap()
-		}()
-		
-		
-		_ = { () -> () in
-			button.tap()
-			
-			let alert = app.alerts.element
-			XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
-			XCTAssertEqual(alert.label, "[Title]HandlerBoth")
-			
-			let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset + titleCancelAppend]
-			XCTAssertTrue(alertButtonCancel.exists)
-			alertButtonCancel.tap()
-		}()
-		
-	}
+    
+    _ = { () -> () in
+      button.tap()
+      
+      let alert = app.alerts.element
+      XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
+      XCTAssertEqual(alert.label, "[Title]HandlerBoth")
+      
+      let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset + titleDefaultAppend]
+      XCTAssertTrue(alertButtonDefault.exists)
+      alertButtonDefault.tap()
+    }()
+    
+    
+    _ = { () -> () in
+      button.tap()
+      
+      let alert = app.alerts.element
+      XCTAssertTrue(alert.staticTexts["[Message]HandlerBoth"].exists)
+      XCTAssertEqual(alert.label, "[Title]HandlerBoth")
+      
+      let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset + titleCancelAppend]
+      XCTAssertTrue(alertButtonCancel.exists)
+      alertButtonCancel.tap()
+    }()
+    
+  }
 }
