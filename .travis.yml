@@ -1,6 +1,6 @@
 language: swift
 osx_image: xcode10.2
-podfile: LLAEasyAlertManagerDemo
+podfile: LLAEasyAlertManagerDemo/Podfile
 
 script:
   - swift --version
