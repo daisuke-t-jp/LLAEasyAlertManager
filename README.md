@@ -55,10 +55,10 @@ LLAEasyAlertManager.sharedInstance.present(self, message: "MessageTitle", title:
  * - Default action handler
  */
 LLAEasyAlertManager.sharedInstance.present(self,
-	message: "HandlerDefault",
-	title: "title",
-	handlerDefault: { (action: UIAlertAction!) in
-		print("default") })
+  message: "HandlerDefault",
+  title: "title",
+  handlerDefault: { (action: UIAlertAction!) in
+    print("default") })
 
 /**
  * Present alert with
@@ -69,11 +69,11 @@ LLAEasyAlertManager.sharedInstance.present(self,
  * - Cancel action handler
  */
 LLAEasyAlertManager.sharedInstance.present(self,
-	message: "HandlerCancel",
-	title: "title",
-	handlerDefault: nil,
-	handlerCancel: { (action: UIAlertAction!) in
-		print("cancel") })
+  message: "HandlerCancel",
+  title: "title",
+  handlerDefault: nil,
+  handlerCancel: { (action: UIAlertAction!) in
+    print("cancel") })
 
 /**
  * Present alert with
@@ -85,12 +85,12 @@ LLAEasyAlertManager.sharedInstance.present(self,
  * - Cancel action handler
  */
 LLAEasyAlertManager.sharedInstance.present(self,
-	message: "HandlerBoth",
-	title: "title",
-	handlerDefault: { (action: UIAlertAction!) in
-		print("default")},
-	handlerCancel: { (action: UIAlertAction!) in
-		print("cancel")}
+  message: "HandlerBoth",
+  title: "title",
+  handlerDefault: { (action: UIAlertAction!) in
+    print("default")},
+  handlerCancel: { (action: UIAlertAction!) in
+    print("cancel")}
                           
 ```
 
