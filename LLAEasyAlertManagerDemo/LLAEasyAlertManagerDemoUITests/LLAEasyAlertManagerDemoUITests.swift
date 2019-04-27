@@ -85,7 +85,7 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
     XCTAssertTrue(button.exists)
     
     
-    _ = { () -> () in
+    do {
       button.tap()
       
       let alert = app.alerts.element
@@ -95,10 +95,10 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
       let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
       XCTAssertTrue(alertButtonDefault.exists)
       alertButtonDefault.tap()
-    }()
+    }
     
     
-    _ = { () -> () in
+    do {
       button.tap()
       
       let alert = app.alerts.element
@@ -108,7 +108,7 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
       let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset]
       XCTAssertTrue(alertButtonCancel.exists)
       alertButtonCancel.tap()
-    }()
+    }
     
   }
   
@@ -119,7 +119,7 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
     XCTAssertTrue(button.exists)
     
     
-    _ = { () -> () in
+    do {
       button.tap()
       
       let alert = app.alerts.element
@@ -129,10 +129,10 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
       let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset]
       XCTAssertTrue(alertButtonDefault.exists)
       alertButtonDefault.tap()
-    }()
+    }
     
     
-    _ = { () -> () in
+    do {
       button.tap()
       
       let alert = app.alerts.element
@@ -142,7 +142,7 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
       let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset]
       XCTAssertTrue(alertButtonCancel.exists)
       alertButtonCancel.tap()
-    }()
+    }
     
   }
   
@@ -166,8 +166,8 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
     textfieldCancel.typeText(titleCancelAppend)
     textfieldCancel.typeText("\n")
     
-    
-    _ = { () -> () in
+
+    do {
       button.tap()
       
       let alert = app.alerts.element
@@ -177,10 +177,10 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
       let alertButtonDefault = alert.buttons[LLAEasyAlertManager.actionTitleDefaultPreset + titleDefaultAppend]
       XCTAssertTrue(alertButtonDefault.exists)
       alertButtonDefault.tap()
-    }()
+    }
     
     
-    _ = { () -> () in
+    do {
       button.tap()
       
       let alert = app.alerts.element
@@ -190,7 +190,7 @@ class LLAEasyAlertManagerDemoUITests: XCTestCase {
       let alertButtonCancel = alert.buttons[LLAEasyAlertManager.actionTitleCancelPreset + titleCancelAppend]
       XCTAssertTrue(alertButtonCancel.exists)
       alertButtonCancel.tap()
-    }()
+    }
     
   }
 }
